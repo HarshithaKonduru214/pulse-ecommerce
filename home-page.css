@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Syne+Tactile&display=swap');
+
+:root {
+    --primary-color: #DB2777;
+    --secondary-color: #ec4899;
+}
+.space-around {
+    justify-content: space-around;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.center {
+    justify-content: center;
+}
+
+.nav-left {
+    flex: 2 0 auto;
+}
+
+.nav-right {
+    flex: 1 0 auto;
+}
+
+.nav-logo > a {
+    font-family: 'Dancing Script', cursive;
+    color: var(--primary-color);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
