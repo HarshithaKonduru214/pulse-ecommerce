@@ -3,21 +3,55 @@
 :root {
     --primary-color: #DB2777;
     --secondary-color: #ec4899;
+    --font-black: #2F323A;
 }
-.space-around {
+
+.space-around-main {
     justify-content: space-around;
 }
 
-.space-evenly {
+.space-evenly-main {
     justify-content: space-evenly;
 }
 
-.space-between {
+.space-between-main {
     justify-content: space-between;
 }
 
-.center {
+.center-main {
     justify-content: center;
+}
+
+.space-around-cross {
+    align-content: space-around;
+}
+
+.space-evenly-cross {
+    align-content: space-evenly;
+}
+
+.space-between-cross {
+    align-content: space-between;
+}
+
+.center-cross {
+    align-content: center;
+}
+
+.flex-end-item-cross {
+    align-self: flex-end;
+}
+
+.no-style-link {
+    text-decoration: none;
+}
+
+.gap {
+    gap: 1rem;
+}
+
+.margin-left {
+    margin-left: 1rem;
 }
 
 .nav-left {
@@ -35,7 +69,4 @@
     font-weight: 700;
 }
 
-.text-decoration {
-    text-decoration: none;
-}
 
