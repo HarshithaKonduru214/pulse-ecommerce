@@ -7,32 +7,123 @@
     <title>Pulse Homepage</title>
     <link rel="stylesheet" href="https://oxygen-ui-component-library.netlify.app/Components/utility.css">
     <link rel="stylesheet" href="home-page.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script
+      src="https://kit.fontawesome.com/f80c68505b.js"
+      crossorigin="anonymous"
+    ></script>
 </head>
 <body>
     <!-- navbar -->
-    <nav class="nav container box-shadow">
+    <nav class="nav margin-bottom box-shadow">
         <div class="nav-content flex-row space-between-main">
-            <div class="nav-left flex-row gap margin-bottom">
+            <div class="nav-left flex-row gap ">
                 <div class="nav-logo flex-end-item-cross margin-left"><a href="#" class="no-style-link">pulse</a></div>
                 <div class="nav-categories flex-row space-evenly-main gap">
-                    <a class="no-style-link center-cross" href="#">WOMEN</a>
-                    <a class="no-style-link flex-end-item-cross " href="#">MEN</a>
-                    <a class="no-style-link flex-end-item-cross " href="#">TOP BRANDS</a>
-                    <a class="no-style-link flex-end-item-cross " href="#">PREMIUM BRANDS</a>
+                    <div class="nav-category-item flex-end-item-cross padding-bottom">
+                        <a class="list-heading no-style-link" href="#"><strong>WOMEN</strong></a>
+                        <div class="list-item-stacked box-shadow flex-column padding">
+                            <a href="#" class="list-item gray-text no-style-link">Perfumes(EDT/EDP)</a>
+                            <a href="#" class="list-item gray-text no-style-link">Body Mists / Sprays</a>
+                            <a href="#" class="list-item gray-text no-style-link">Deodorants / Roll-Ons</a>
+                        </div>
+                    </div>
+                    <div class="nav-category-item flex-end-item-cross padding-bottom">
+                        <a class="list-heading no-style-link" href="#"><strong>MEN</strong></a>
+                        <div class="list-item-stacked box-shadow flex-column padding">
+                            <a href="#" class="list-item gray-text no-style-link">Perfumes(EDT/EDP)</a>
+                            <a href="#" class="list-item gray-text no-style-link">Body Mists / Sprays</a>
+                            <a href="#" class="list-item gray-text no-style-link">Deodorants / Roll-Ons</a>
+                            <a href="#" class="list-item gray-text no-style-link">Colognes / After Shaves</a>
+                        </div>
+                    </div>
+                    <div class="nav-category-item flex-end-item-cross padding-bottom">
+                        <a class="list-heading no-style-link" href="#"><strong>TOP BRANDS</strong></a>
+                        <div class="list-item-stacked box-shadow flex-column padding">
+                            <a href="#" class="list-item gray-text no-style-link">Dior</a>
+                            <a href="#" class="list-item gray-text no-style-link">Gucci</a>
+                            <a href="#" class="list-item gray-text no-style-link">Calvin Klein</a>
+                            <a href="#" class="list-item gray-text no-style-link">Davidoff</a>
+                            <a href="#" class="list-item gray-text no-style-link">Versace</a>
+                            <a href="#" class="list-item gray-text no-style-link">Skin by Titan</a>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="nav-right flex-row space-evenly-main">
-                <div class="nav-search padding flex-end-item-cross"><input type="search" name="search"></div>
+                <div class="nav-search align-center-item gap flex-row">
+                    <i class="fas fa-search align-center-item"></i>
+                    <input class="center-cross nav-search-bar" type="search" name="search" placeholder="Search on Pulse">
+                </div>
                 <div class="nav-user flex-end-item-cross margin-bottom">
-                    <button class="account margin-top button">Account</button>
-                    <button class="wishlist margin-top button">Wishlist</button>
-                    <button class="cart margin-top button">
-                        <i class="fas fa-shopping-cart"></i>Cart</button>
+                    <a class="account margin-top button"><i class="fas margin-right-xs fa-user-alt"></i>Account</a>
+                    <a class="wishlist margin-top button"><i class="far fa-heart margin-right-xs"></i>Wishlist</a>
+                    <a class="cart margin-top button">
+                        <i class="fas fa-shopping-cart margin-right-xs"></i>Cart</a>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- main content -->
+    <main class="">
+        <div class="banner margin">
+            <img class="image-res" src="/banner.svg" alt="banner-img">    
+        </div>
+        <div class="category"></div>
+        <div class="family"></div>
+        <div class="price"></div>
+        <div class="brand"></div>
+        <div class="note"></div>
+        <div class="reviews"></div>
+        <div class="social-media flex-row space-around-main">
+            <div class="social-media-item flex-row padding">
+                <div class="one-icon"><i class="fas fa-truck"></i></div>
+                <div class="one-content flex-column padding">
+                    <div class="one-heading margin-bottom-xs">FREE SHIPPING</div>
+                    <div class="one-desc margin-top gray-text">For orders above Rs.999.</div>
+                </div>
+            </div>
+            <div class="social-media-item flex-row padding">
+                <div class="one-icon"><i class="fas fa-undo-alt"></i></div>
+                <div class="one-content flex-column padding">
+                    <div class="one-heading margin-bottom-xs">EASY RETURNS</div>
+                    <div class="one-desc margin-top gray-text">15 Day Easy Returns For Most Products.</div>
+                </div>
+            </div>
+            <div class="social-media-item flex-row padding">
+                <div class="one-icon"><i class="fas fa-certificate"></i></div>
+                <div class="one-content flex-column padding">
+                    <div class="one-heading margin-bottom-xs">AUTHENTIC PRODUCTS</div>
+                    <div class="one-desc margin-top gray-text">Sourced Directly from Brands/ Authorised Distributors.</div>
+                </div>
+            </div>
+            <div class="social-media-item flex-row padding">
+                <div class="one-icon"><i class="fas fa-tag"></i></div>
+                <div class="one-content flex-column padding">
+                    <div class="one-heading margin-bottom-xs">10+ BRANDS</div>
+                    <div class="one-desc margin-top gray-text">Well curated list of brands.</div>
+                </div>
+            </div>
+            <div class="social-media-links flex-column padding margin-top">
+                <div class="one-heading">SHOW US SOME LOVE</div>
+                <div class="social-links flex-row">
+                    <a href="#"><i class="one-icon margin-right fab fa-github-square"></i></a>
+                    <a href="#"><i class="one-icon margin-right fab fa-linkedin"></i></a>
+                    <a href="#"><i class="one-icon margin-right fab fa-twitter-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer flex-column">
+            <div class="policy flex-row gap">
+                <a CLASS="no-style-link" href="#">TERMS & CONDITIONS</a>
+                <a CLASS="no-style-link" href="#">CANCELLATION POLICY</a>
+                <a CLASS="no-style-link" href="#">SHIPPING POLICY</a>
+                <a CLASS="no-style-link" href="#">PRIVACY POLICY</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- footer -->
     
 </body>
 </html>
