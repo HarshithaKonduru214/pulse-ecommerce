@@ -6,46 +6,6 @@
     --font-black: #2F323A;
 }
 
-.space-around-main {
-    justify-content: space-around;
-}
-
-.space-evenly-main {
-    justify-content: space-evenly;
-}
-
-.space-between-main {
-    justify-content: space-between;
-}
-
-.center-main {
-    justify-content: center;
-}
-
-.space-around-cross {
-    align-content: space-around;
-}
-
-.space-evenly-cross {
-    align-content: space-evenly;
-}
-
-.space-between-cross {
-    align-content: space-between;
-}
-
-.center-cross {
-    align-content: center;
-}
-
-.flex-end-item-cross {
-    align-self: flex-end;
-}
-
-.no-style-link {
-    text-decoration: none;
-}
-
 .gap {
     gap: 1rem;
 }
@@ -65,8 +25,8 @@
 .nav-logo > a {
     font-family: 'Dancing Script', cursive;
     color: var(--primary-color);
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 
