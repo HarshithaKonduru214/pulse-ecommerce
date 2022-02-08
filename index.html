@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pulse Homepage</title>
-    <link rel="stylesheet" href="https://oxygen-ui-component-library.netlify.app/Components/utility.css">
+    <link rel="stylesheet" href="https://oxygen-ui-component-library.netlify.app/components/card/card.css">
     <link rel="stylesheet" href="https://utility-component.netlify.app/utility.css">
     <link rel="stylesheet" href="home-page.css">
-    <script
-      src="https://kit.fontawesome.com/f80c68505b.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <!-- navbar -->
-    <nav class="nav mb-2 box-shadow">
+    <nav class="nav mb-2">
         <div class="nav-content flex-row justify-content-between">
             <div class="nav-left flex-row gap ">
                 <div class="nav-logo align-self-end ml-2"><a href="#" class="no-style-link">pulse</a></div>
                 <div class="nav-categories flex-row justify-content-main gap">
-                    <div class="nav-category-item align-self-end padding-bottom">
+                    <div class="nav-category-item align-self-end pb-2">
                         <a class="list-heading no-style-link" href="#"><strong>WOMEN</strong></a>
                         <div class="list-item-stacked box-shadow flex-column p-2">
                             <a href="#" class="list-item gray-text no-style-link">Perfumes(EDT/EDP)</a>
@@ -28,7 +27,7 @@
                             <a href="#" class="list-item gray-text no-style-link">Deodorants / Roll-Ons</a>
                         </div>
                     </div>
-                    <div class="nav-category-item align-self-end padding-bottom">
+                    <div class="nav-category-item align-self-end pb-2">
                         <a class="list-heading no-style-link" href="#"><strong>MEN</strong></a>
                         <div class="list-item-stacked box-shadow flex-column p-2">
                             <a href="#" class="list-item gray-text no-style-link">Perfumes(EDT/EDP)</a>
@@ -37,7 +36,7 @@
                             <a href="#" class="list-item gray-text no-style-link">Colognes / After Shaves</a>
                         </div>
                     </div>
-                    <div class="nav-category-item align-self-end padding-bottom">
+                    <div class="nav-category-item align-self-end pb-2">
                         <a class="list-heading no-style-link" href="#"><strong>TOP BRANDS</strong></a>
                         <div class="list-item-stacked box-shadow flex-column p-2">
                             <a href="#" class="list-item gray-text no-style-link">Dior</a>
@@ -50,80 +49,217 @@
                     </div>
                 </div>
             </div>
-            <div class="nav-right flex-row justify-content-even">
+            <div class="nav-right flex-row justify-content-between">
                 <div class="nav-search align-self-center gap flex-row">
                     <i class="fas fa-search align-self-center"></i>
-                    <input class="center-cross nav-search-bar" type="search" name="search" placeholder="Search on Pulse">
+                    <input class="align-self-center nav-search-bar" type="search" name="search"
+                        placeholder="Search on Pulse">
                 </div>
                 <div class="nav-user align-self-end mb-2">
-                    <a class="account mt-2 button"><i class="fas mr-1 fa-user-alt"></i>Account</a>
-                    <a class="wishlist mt-2 button"><i class="far fa-heart mr-1"></i>Wishlist</a>
-                    <a class="cart mt-2 button"><i class="fas fa-shopping-cart margin-right-xs"></i>Cart</a>
+                    <a class="account mr-2 button"><i class="fas mr-1 fa-user-alt"></i><span
+                            class="nav-user-title">Account</span></a>
+                    <a class="wishlist mr-2 button"><i class="far fa-heart mr-1"></i><span
+                            class="nav-user-title">Wishlist</span></a>
+                    <a class="cart mr-2 button"><i class="fas fa-shopping-cart mr-1"></i><span
+                            class="nav-user-title">Cart</span></a>
                 </div>
             </div>
         </div>
     </nav>
 
     <!-- main content -->
-    <main class="">
-        <div class="banner margin">
-            <img class="image-res" src="/banner.svg" alt="banner-img">    
+    <main class="main-container mt-2">
+
+        <!-- banner -->
+        <div class="banner m-2">
+            <img class="image-res" src="/images/banner.svg" alt="banner-img">
         </div>
-        <div class="category"></div>
+
+        <!-- category -->
+        <div class="category flex-column">
+            <div class="heading align-self-center">SHOP BY CATEGORY</div>
+            <div class="brand-container flex-row gap p-2 justify-content-even">
+                <div class="brand-item flex-row">
+                    <div class="brand-content">MEN</div>
+                </div>
+                <div class="brand-item flex-row">
+                    <div class="brand-content align-self-center">GUCCI</div>
+                </div>
+                <div class="brand-item flex-row">
+                    <div class="brand-content">CALVIN KLEIN</div>
+                </div>
+                <div class="brand-item flex-row">
+                    <div class="brand-content">DAVIDOFF</div>
+                </div>       
+                <div class="brand-item flex-row">
+                    <div class="brand-content">VERSACE</div>
+                </div>         
+                <div class="brand-item flex-row">
+                    <div class="brand-content">SKIN BY TITAN</div>
+                </div> 
+                <div class="brand-item flex-row">
+                    <div class="brand-content">BVLGARI</div>
+                </div> 
+            </div> 
+        </div>
+
+        <!-- family -->
         <div class="family"></div>
-        <div class="price"></div>
-        <div class="brand"></div>
-        <div class="note"></div>
-        <div class="reviews"></div>
-        <div class="social-media flex-row space-around-main">
-            <div class="social-media-item flex-row padding">
-                <div class="one-icon"><i class="fas fa-truck"></i></div>
-                <div class="one-content flex-column padding">
-                    <div class="one-heading margin-bottom-xs">FREE SHIPPING</div>
-                    <div class="one-desc margin-top gray-text">For orders above Rs.999.</div>
+
+        <!-- price -->
+        <div class="price flex-column gap p-2">
+            <div class="heading align-self-center">SHOP BY PRICE</div>
+            <div class="price-item-container flex-row gap p-2 justify-content-even">
+                <div class="price-item flex-row">
+                    <div class="price-content">Under ₹1000</div>
+                </div>
+                <div class="price-item flex-row">
+                    <div class="price-content">Under ₹2000</div>
+                </div>
+                <div class="price-item flex-row">
+                    <div class="price-content">Under ₹3000</div>
+                </div>
+                <div class="price-item flex-row">
+                    <div class="price-content">Under ₹4000</div>
+                </div>               
+            </div>            
+        </div>
+
+        <!-- brand -->
+        <div class="brand flex-column">
+            <div class="heading align-self-center">SHOP BY BRANDS</div>
+            <div class="brand-container flex-row gap p-2 justify-content-even">
+                <div class="brand-item flex-row">
+                    <div class="brand-content">DIOR</div>
+                </div>
+                <div class="brand-item flex-row">
+                    <div class="brand-content align-self-center">GUCCI</div>
+                </div>
+                <div class="brand-item flex-row">
+                    <div class="brand-content">CALVIN KLEIN</div>
+                </div>
+                <div class="brand-item flex-row">
+                    <div class="brand-content">DAVIDOFF</div>
+                </div>       
+                <div class="brand-item flex-row">
+                    <div class="brand-content">VERSACE</div>
+                </div>         
+                <div class="brand-item flex-row">
+                    <div class="brand-content">SKIN BY TITAN</div>
+                </div> 
+                <div class="brand-item flex-row">
+                    <div class="brand-content">BVLGARI</div>
+                </div> 
+            </div> 
+
+        </div>
+
+        <!-- note -->
+        <div class="note">
+            <div class="message-container flex-column p-2">
+                <div class="message black-text justify-self-center align-self-center">Please be careful of fraudulent call and messages!</div>
+                <div class="message black-text justify-self-center align-self-center">Pulse will never call you with offers pertaining to free gifts or prizes or payments through links.</div>
+            </div>    
+        </div>
+
+        <!-- reviews -->
+        <div class="review flex-column justify-content-around">
+            <div class="heading align-self-center">REVIEWS</div>
+            <div class="review-container flex-row justify-content-around">
+                <div class="card-container box-shadow flex-column">
+                    <div class="card-heading m-2">
+                        <i class="quote-icon fas fa-quote-left p-2"></i>
+                    </div>
+                    <div class="card-content mb-2 p-2">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </div>
+                    <div class="card-by p-2">
+                        - Falguni Nayar
+                    </div>
+                </div>
+                <div class="card-container box-shadow flex-column">
+                    <div class="card-heading m-2">
+                        <i class="quote-icon fas fa-quote-left p-2"></i>
+                    </div>
+                    <div class="card-content mb-2 p-2">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </div>
+                    <div class="card-by p-2">
+                        - Falguni Nayar
+                    </div>
+                </div>
+                <div class="card-container box-shadow flex-column">
+                    <div class="card-heading m-2">
+                        <i class="quote-icon fas fa-quote-left p-2"></i>
+                    </div>
+                    <div class="card-content mb-2 p-2">
+                      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </div>
+                    <div class="card-by p-2">
+                        - Falguni Nayar
+                    </div>
                 </div>
             </div>
-            <div class="social-media-item flex-row padding">
-                <div class="one-icon"><i class="fas fa-undo-alt"></i></div>
-                <div class="one-content flex-column padding">
-                    <div class="one-heading margin-bottom-xs">EASY RETURNS</div>
-                    <div class="one-desc margin-top gray-text">15 Day Easy Returns For Most Products.</div>
+            
+        </div>
+
+        <!-- social-media -->
+        <div class="social-media flex-row justify-content-around">
+            <div class="social-media-item flex-row p-2">
+                <div class="social-icons mt-2"><i class="fas fa-truck"></i></div>
+                <div class="social-content flex-column p-2">
+                    <div class="social-heading margin-bottom-xs">FREE SHIPPING</div>
+                    <div class="social-desc mt-2 gray-text">For orders above Rs.999.</div>
                 </div>
             </div>
-            <div class="social-media-item flex-row padding">
-                <div class="one-icon"><i class="fas fa-certificate"></i></div>
-                <div class="one-content flex-column padding">
-                    <div class="one-heading margin-bottom-xs">AUTHENTIC PRODUCTS</div>
-                    <div class="one-desc margin-top gray-text">Sourced Directly from Brands/ Authorised Distributors.</div>
+            <div class="social-media-item flex-row p-2">
+                <div class="social-icons mt-2"><i class="fas fa-undo-alt"></i></div>
+                <div class="social-content flex-column p-2">
+                    <div class="social-heading margin-bottom-xs">EASY RETURNS</div>
+                    <div class="social-desc mt-2 gray-text">15 Day Easy Returns For Most Products.</div>
                 </div>
             </div>
-            <div class="social-media-item flex-row padding">
-                <div class="one-icon"><i class="fas fa-tag"></i></div>
-                <div class="one-content flex-column padding">
-                    <div class="one-heading margin-bottom-xs">10+ BRANDS</div>
-                    <div class="one-desc margin-top gray-text">Well curated list of brands.</div>
+            <div class="social-media-item flex-row p-2">
+                <div class="social-icons mt-2"><i class="fas fa-certificate"></i></div>
+                <div class="social-content flex-column p-2">
+                    <div class="social-heading margin-bottom-xs">AUTHENTIC PRODUCTS</div>
+                    <div class="social-desc mt-2 gray-text">Sourced Directly from Brands/ Authorised Distributors.</div>
                 </div>
             </div>
-            <div class="social-media-links flex-column padding margin-top">
-                <div class="one-heading">SHOW US SOME LOVE</div>
+            <div class="social-media-item flex-row p-2">
+                <div class="social-icons mt-2"><i class="fas fa-tag"></i></div>
+                <div class="social-content flex-column p-2">
+                    <div class="social-heading mb-1">10+ BRANDS</div>
+                    <div class="social-desc mt-2 gray-text">Well curated list of brands.</div>
+                </div>
+            </div>
+            <div class="social-media-item flex-column p-2 mt-2">
+                <div class="social-heading">SHOW US SOME LOVE</div>
                 <div class="social-links flex-row">
-                    <a href="#"><i class="one-icon margin-right fab fa-github-square"></i></a>
-                    <a href="#"><i class="one-icon margin-right fab fa-linkedin"></i></a>
-                    <a href="#"><i class="one-icon margin-right fab fa-twitter-square"></i></a>
+                    <a href="#"><i class="social-icons mt-2 mr-1 fab fa-github-square"></i></a>
+                    <a href="#"><i class="social-icons mt-2 mr-1 fab fa-linkedin"></i></a>
+                    <a href="#"><i class="social-icons mt-2 mr-1 fab fa-twitter-square"></i></a>
                 </div>
             </div>
         </div>
         <div class="footer flex-column">
-            <div class="policy flex-row gap">
-                <a CLASS="no-style-link" href="#">TERMS & CONDITIONS</a>
-                <a CLASS="no-style-link" href="#">CANCELLATION POLICY</a>
-                <a CLASS="no-style-link" href="#">SHIPPING POLICY</a>
-                <a CLASS="no-style-link" href="#">PRIVACY POLICY</a>
+            <div class="policy flex-row">
+                <a CLASS="no-style-link white-text" href="#">TERMS & CONDITIONS</a>
+                <a CLASS="no-style-link white-text" href="#">CANCELLATION POLICY</a>
+                <a CLASS="no-style-link white-text" href="#">SHIPPING POLICY</a>
+                <a CLASS="no-style-link white-text" href="#">PRIVACY POLICY</a>
+            </div>
+            <div class="footer-note">
+                © 2022 Pulse - Made with <i class="fas fa-heart"></i> by Harshitha Konduru
             </div>
         </div>
+
+        
     </main>
 
     <!-- footer -->
     
+
 </body>
+
 </html>
