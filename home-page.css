@@ -23,7 +23,8 @@ nav {
 }
 
 main {
-    grid-area: main; 
+    grid-area: main;
+ 
     display: grid;
     grid-template-rows: 4fr 2fr 2fr 2fr 2fr 1fr 2fr 2fr 0.5fr;
     grid-template-areas: "banner"
@@ -40,6 +41,7 @@ main {
 .banner {
     grid-area: banner;
     background-color: aqua;
+    width: 100%;
 }
 
 .category {
@@ -55,12 +57,6 @@ main {
 .footer {
     grid-area: footer;
     background-color: #2F323A;
-}
-
-.note {
-    grid-area: note;
-    background-color: lightpink;
-    justify-content: center;
 }
 
 .social-media-item {
