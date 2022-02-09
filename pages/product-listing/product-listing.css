@@ -1,0 +1,43 @@
+/* basic grid layout for main content */
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: "sidebar products";
+    height: 100%vh;
+}
+
+/* sidebar-styling */
+.sidebar {
+    grid-area: sidebar;
+    position: fixed;
+}
+
+.sidebar-heading {
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.sidebar-name {
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-bottom: var(--border-gray) solid 3px;
+}
+
+.product-list {
+    grid-area: products;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    outline: none;
+}
+
+
+

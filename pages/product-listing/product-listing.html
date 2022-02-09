@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="https://utility-component.netlify.app/utility.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/pages/product-listing/product-listing.css">
+    <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="nav mb-2 box-shadow">
+        <div class="nav-content flex-row justify-content-between">
+            <div class="nav-left flex-row gap ">
+                <div class="nav-logo align-self-end ml-2"><a href="#" class="no-style-link">pulse</a></div>
+                <div class="nav-categories flex-row justify-content-main gap">
+                    <div class="nav-category-item align-self-end pb-2">
+                        <a class="list-heading no-style-link" href="#"><strong>WOMEN</strong></a>
+                        <div class="list-item-stacked box-shadow flex-column p-2">
+                            <a href="#" class="list-item gray-text no-style-link">Perfumes(EDT/EDP)</a>
+                            <a href="#" class="list-item gray-text no-style-link">Body Mists / Sprays</a>
+                            <a href="#" class="list-item gray-text no-style-link">Deodorants / Roll-Ons</a>
+                        </div>
+                    </div>
+                    <div class="nav-category-item align-self-end pb-2">
+                        <a class="list-heading no-style-link" href="#"><strong>MEN</strong></a>
+                        <div class="list-item-stacked box-shadow flex-column p-2">
+                            <a href="#" class="list-item gray-text no-style-link">Perfumes(EDT/EDP)</a>
+                            <a href="#" class="list-item gray-text no-style-link">Body Mists / Sprays</a>
+                            <a href="#" class="list-item gray-text no-style-link">Deodorants / Roll-Ons</a>
+                            <a href="#" class="list-item gray-text no-style-link">Colognes / After Shaves</a>
+                        </div>
+                    </div>
+                    <div class="nav-category-item align-self-end pb-2">
+                        <a class="list-heading no-style-link" href="#"><strong>TOP BRANDS</strong></a>
+                        <div class="list-item-stacked box-shadow flex-column p-2">
+                            <a href="#" class="list-item gray-text no-style-link">Dior</a>
+                            <a href="#" class="list-item gray-text no-style-link">Gucci</a>
+                            <a href="#" class="list-item gray-text no-style-link">Calvin Klein</a>
+                            <a href="#" class="list-item gray-text no-style-link">Davidoff</a>
+                            <a href="#" class="list-item gray-text no-style-link">Versace</a>
+                            <a href="#" class="list-item gray-text no-style-link">Skin by Titan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right flex-row justify-content-between">
+                <div class="nav-search align-self-center gap flex-row">
+                    <i class="fas fa-search align-self-center"></i>
+                    <input class="align-self-center nav-search-bar" type="search" name="search"
+                        placeholder="Search on Pulse">
+                </div>
+                <div class="nav-user align-self-end mb-2">
+                    <a class="account mr-2 button"><i class="fas mr-1 fa-user-alt"></i><span
+                            class="nav-user-title">Account</span></a>
+                    <a class="wishlist mr-2 button"><i class="far fa-heart mr-1"></i><span
+                            class="nav-user-title">Wishlist</span></a>
+                    <a class="cart mr-2 button"><i class="fas fa-shopping-cart mr-1"></i><span
+                            class="nav-user-title">Cart</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- main content -->
+    <main class="main-content">
+
+        <!-- sidebar -->
+        <div class="sidebar flex-column p-2">
+            <div class="sidebar-name mb-2 align-self-center">FILTERS</div>
+            <!-- filters -->
+            <div class="sidebar-sort-by mb-2">
+                <div class="sidebar-heading pb-2">Sort By</div>
+                <input class="radio" type="radio" name="sort-by" id="price-low">
+                <label for="price">Price: Low to High</label><br>
+                <input class="radio" type="radio" name="sort-by" id="price-high">
+                <label for="discount">Price: High to Low</label><br>
+                <input class="radio" type="radio" name="sort-by" id="discount">
+                <label for="rating">Discount</label>
+            </div>
+
+            <div class="sidebar-rating mb-2">
+                <div class="sidebar-heading pb-2">Rating</div>
+                <input type="range" name="rating" id="rating" min="0" max="5">
+            </div>
+
+            <div class="sidebar-category mb-2">
+                <div class="sidebar-heading pb-2">Fragrance Family</div>
+                <input class="checkbox" type="checkbox" name="fresh" id="fresh">
+                <label for="fresh">Fresh</label><br>
+                <input class="checkbox" type="checkbox" name="floral" id="floral">
+                <label for="floral">Floral</label><br>
+                <input class="checkbox" type="checkbox" name="fruity" id="fruity">
+                <label for="fruity">Fruity</label><br>
+                <input class="checkbox" type="checkbox" name="warm-spicy" id="warem-spicy">
+                <label for="warm-spicy">Warm and Spicy</label><br>
+            </div>
+
+        </div>
+
+        <!-- product listing -->
+        <div class="product-list"></div>
+
+    </main>
+
+    <footer class="flex-column">
+        <!-- social-media -->
+        <div class="social-media flex-row justify-content-between m-2">
+            <div class="social-media-left flex-row justify-content-even gap">
+                <div class="social-media-item flex-row p-2">
+                    <div class="social-icons mt-2"><i class="fas fa-truck"></i></div>
+                    <div class="social-content flex-column p-2">
+                        <div class="social-heading margin-bottom-xs">FREE SHIPPING</div>
+                        <div class="social-desc mt-2 gray-text">For orders above Rs.999.</div>
+                    </div>
+                </div>
+                <div class="social-media-item flex-row p-2">
+                    <div class="social-icons mt-2"><i class="fas fa-undo-alt"></i></div>
+                    <div class="social-content flex-column p-2">
+                        <div class="social-heading margin-bottom-xs">EASY RETURNS</div>
+                        <div class="social-desc mt-2 gray-text">15 Day Easy Returns For Most Products.</div>
+                    </div>
+                </div>
+                <div class="social-media-item flex-row p-2">
+                    <div class="social-icons mt-2"><i class="fas fa-certificate"></i></div>
+                    <div class="social-content flex-column p-2">
+                        <div class="social-heading margin-bottom-xs">AUTHENTIC PRODUCTS</div>
+                        <div class="social-desc mt-2 gray-text">Sourced Directly from Brands/ Authorised Distributors.
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media-item flex-row p-2">
+                    <div class="social-icons mt-2"><i class="fas fa-tag"></i></div>
+                    <div class="social-content flex-column p-2">
+                        <div class="social-heading mb-1">10+ BRANDS</div>
+                        <div class="social-desc mt-2 gray-text">Well curated list of brands.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-media-right">
+                <div class="social-media-item flex-column p-2 mt-2">
+                    <div class="social-heading align-self-center">SHOW US SOME LOVE</div>
+                    <div class="social-links flex-row align-self-center">
+                        <a href="#"><i class="social-icons mt-2 mr-1 fab fa-github-square"></i></a>
+                        <a href="#"><i class="social-icons mt-2 mr-1 fab fa-linkedin"></i></a>
+                        <a href="#"><i class="social-icons mt-2 mr-1 fab fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="footer flex-column m-2 p-2 gap">
+            <div class="policy flex-row">
+                <a CLASS="no-style-link white-text" href="#">TERMS & CONDITIONS</a>
+                <a CLASS="no-style-link white-text" href="#">CANCELLATION POLICY</a>
+                <a CLASS="no-style-link white-text" href="#">SHIPPING POLICY</a>
+                <a CLASS="no-style-link white-text" href="#">PRIVACY POLICY</a>
+            </div>
+            <div class="footer-note">
+                © 2022 Pulse - Made with <i class="fas fa-heart"></i> by Harshitha Konduru
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
