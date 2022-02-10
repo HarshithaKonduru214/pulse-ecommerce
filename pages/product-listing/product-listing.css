@@ -1,0 +1,142 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    position: sticky;
+}
+
+.body-container{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "nav"
+    "main-content"
+    "footer"
+    ;
+    height: 100vh;
+}
+
+.nav{
+    grid-area: nav;
+    position: sticky;
+    top: 0;
+}
+
+.main-content{
+    grid-area: main-content;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: 
+    "sidebar product-list"
+    ;
+}
+
+/* sidebar-styling */
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--light-gray);
+    position: sticky;
+    height: fit-content;
+    left: 0;
+    top: 4rem;
+}
+
+.sidebar-heading {
+    font-size: 1.5rem;
+}
+
+.sidebar-name {
+    font-size: 2rem;
+    color: var(--primary-color);
+    border-bottom: var(--border-gray) solid 3px;
+}
+
+.sidebar-clear {
+    font-size: 1rem;
+    color: var(--primary-color);
+    background-color: var(--light-gray);
+}
+
+.sidebar-clear:hover {
+    background-color: var(--light-gray);
+    transform: unset;
+    transition: 0.1s;
+}
+
+.product-list{
+    grid-area: product-list;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+label {
+    font-size: 1rem;
+    color: var(--gray-text);
+}
+
+.dropdown-items {
+    font-size: 1rem;
+    color: var(--gray-text);
+}
+
+.dropdown {
+    font-size: 1rem;
+    color: var(--gray-text);
+}
+
+.card-container {
+    position: relative;
+    cursor: pointer;
+    /* grid-area: card; */
+    height: fit-content;
+}
+
+.card-content {
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.card-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-cart {
+    flex: 3 0 0;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--primary-color);
+    height: 100%;
+}
+
+.card-cart:hover {
+    background-color: var(--secondary-color);
+}
+
+.card-wishlist {
+    flex: 1 0 0;
+    font-size: 1rem;
+    color: var(--primary-color);
+    height: 100%;
+    padding: 1rem;
+}
+
+.card-badge {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    padding: 0.5rem;
+    color: var(--gray-text);
+    font-weight: bold;
+    background-color: var(--light-blue);
+}
+
+.card-rating-value {
+    color: var(--secondary-color);
+}
+
+.footer-container{
+    grid-area: footer;
+}

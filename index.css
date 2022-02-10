@@ -13,7 +13,9 @@
     --light-gray: #f3f4f6;
     --border-gray: #e5e7eb;
     --white-color: white;
+    --light-blue: #e0e7ff;
 }
+
 
 .heading {
     font-size: 2rem;
@@ -44,9 +46,9 @@
 }
 
 /* body styling */
-body {
-    font-family: 'Roboto', sans-serif;
+.body {
     display: grid;
+    font-family: 'Roboto', sans-serif;
     grid-template-rows: 0.1fr 4fr;
     grid-template-areas: "navbar"
         "main";
@@ -142,7 +144,7 @@ nav {
 }
 
 /* main content styling */
-main {
+.main-container {
     grid-area: main;
     display: grid;
     grid-template-rows: repeat(3, 1fr) 0.5fr repeat(3, 1fr) 0.5fr 0.2fr;
