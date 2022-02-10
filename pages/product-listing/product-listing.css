@@ -3,18 +3,20 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-areas: "sidebar products";
-    height: 100%vh;
+    gap: 5rem;
+    height: 100vh;
 }
 
 /* sidebar-styling */
 .sidebar {
     grid-area: sidebar;
     position: fixed;
+    background-color: var(--light-gray);
+    height: 100vh;
 }
 
 .sidebar-heading {
     font-size: 1.5rem;
-    color: gray;
 }
 
 .sidebar-name {
@@ -25,19 +27,76 @@
 
 .product-list {
     grid-area: products;
+    flex-wrap: wrap;
+    height: max-content;
 }
 
 label {
     font-size: 1.2rem;
+    color: gray;
 }
 
-input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    outline: none;
+.dropdown-items {
+    font-size: 1.2rem;
+    color: gray;
 }
+
+.dropdown {
+    font-size: 1.2rem;
+    color: gray;
+}
+
+.card-container {
+    position: relative;
+    cursor: pointer;
+}
+
+.card-content {
+    align-items: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.card-heading {
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.card-cart {
+    flex: 3 0 0;
+    font-size: 1rem;
+    padding: 1rem;
+    font-weight: 600;
+    color: white;
+    background-color: var(--primary-color);
+}
+
+.card-cart:hover {
+    background-color: var(--secondary-color);
+}
+
+.card-wishlist {
+    flex: 1 0 0;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    height: 100%;
+}
+
+.card-badge {
+    position: absolute;
+    right: 0;
+    top: 0.5rem;
+    padding: 0.5rem;
+    color: gray;
+    font-weight: bold;
+    background-color:#e0e7ff;
+}
+
+.card-rating-value {
+    color: var(--secondary-color);
+}
+
 
 
 

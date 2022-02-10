@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Listing</title>
     <link rel="stylesheet" href="https://utility-component.netlify.app/utility.css">
+    <link rel="stylesheet" href="https://oxygen-ui-component-library.netlify.app/components/card/card.css">
     <link rel="stylesheet" href="/index.css">
     <link rel="stylesheet" href="/pages/product-listing/product-listing.css">
     <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
 
     <!-- navbar -->
@@ -70,24 +73,38 @@
     <main class="main-content">
 
         <!-- sidebar -->
-        <div class="sidebar flex-column p-2">
+        <div class="sidebar flex-column p-2 mr-2">
             <div class="sidebar-name mb-2 align-self-center">FILTERS</div>
             <!-- filters -->
-            <div class="sidebar-sort-by mb-2">
-                <div class="sidebar-heading pb-2">Sort By</div>
-                <input class="radio" type="radio" name="sort-by" id="price-low">
-                <label for="price">Price: Low to High</label><br>
-                <input class="radio" type="radio" name="sort-by" id="price-high">
-                <label for="discount">Price: High to Low</label><br>
-                <input class="radio" type="radio" name="sort-by" id="discount">
-                <label for="rating">Discount</label>
-            </div>
 
+            <!-- sort by filter -->
+            <div class="sidebar-sort-by mb-2">
+                <div class="sidebar-heading pb-2">Sort By: </div>
+                <label for="sort-by"></label>
+                <select class="dropdown" name="sort-by" id="sort-by" placeholder="Choose one">
+                    <option class="dropdown-items" value="choose" disabled hidden selected>Choose One</option>
+                    <option class="dropdown-items" value="price-high">Price: High to Low</option>
+                    <option class="dropdown-items" value="price-low">Price: Low to High</option>
+                    <option class="dropdown-items" value="discount">Discount</option>
+                    <option class="dropdown-items" value="popular">Pupular</option>
+                </select>
+            </div>
+            <!-- gender -->
+            <div class="sidebar-gender mb-2">
+                <div class="sidebar-heading pb-2">Gender</div>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Female</label><br>
+                <input type="radio" name="gender" id="male">
+                <label for="male">Male</label><br>
+                <input type="radio" name="gender" id="unisex">
+                <label for="unisex">Unisex</label>
+            </div>
+            <!-- rating -->
             <div class="sidebar-rating mb-2">
                 <div class="sidebar-heading pb-2">Rating</div>
                 <input type="range" name="rating" id="rating" min="0" max="5">
             </div>
-
+            <!-- category -->
             <div class="sidebar-category mb-2">
                 <div class="sidebar-heading pb-2">Fragrance Family</div>
                 <input class="checkbox" type="checkbox" name="fresh" id="fresh">
@@ -103,13 +120,129 @@
         </div>
 
         <!-- product listing -->
-        <div class="product-list"></div>
+        <div class="product-list flex-row">
+            <div class="card-container box-shadow flex-column justify-self-center">
+                <div class="card-image container">
+                    <img class="image-res" src="/images/perfume.jpg" alt="image" />
+                </div>
+                <div class="card-content flex-column">
+                    <div class="card-heading black-text mb-2">Versace Pour Homme Eau De Toilette</div>
+                    <div class="card-price flex-row">
+                        <div class="price-currency mr-1">MRP: </div>
+                        <div class="price-value mr-1"><strike>₹4600</strike></div>
+                        <div class="price-dis-value">₹4140</div>
+                    </div>
+                    <div class="card-rating flex-row">
+                        <div class="card-rating-value">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="card-rating-desc ml-2"> ( 4.6 ) </div>
+                    </div>
+                    <div class="card-button flex-row container">
+                        <button class="card-wishlist align-self-center"><i class="far fa-heart mr-1"></i></button>
+                        <button class="card-cart align-self-center">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card-badge">10% OFF</div>
+            </div>
+
+            <div class="card-container box-shadow flex-column">
+                <div class="card-image container">
+                    <img class="image-res" src="/images/perfume.jpg" alt="image" />
+                </div>
+                <div class="card-content flex-column">
+                    <div class="card-heading black-text mb-2">Versace Pour Homme Eau De Toilette</div>
+                    <div class="card-price flex-row">
+                        <div class="price-currency mr-1">MRP: </div>
+                        <div class="price-value mr-1"><strike>₹4600</strike></div>
+                        <div class="price-dis-value">₹4140</div>
+                    </div>
+                    <div class="card-rating flex-row">
+                        <div class="card-rating-value">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="card-rating-desc ml-2"> ( 4.6 ) </div>
+                    </div>
+                    <div class="card-button flex-row container">
+                        <button class="card-wishlist align-self-center"><i class="far fa-heart mr-1"></i></button>
+                        <button class="card-cart align-self-center">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card-badge">10% OFF</div>
+            </div>
+
+            <div class="card-container box-shadow flex-column">
+                <div class="card-image container">
+                    <img class="image-res" src="/images/perfume.jpg" alt="image" />
+                </div>
+                <div class="card-content flex-column">
+                    <div class="card-heading black-text mb-2">Versace Pour Homme Eau De Toilette</div>
+                    <div class="card-price flex-row">
+                        <div class="price-currency mr-1">MRP: </div>
+                        <div class="price-value mr-1"><strike>₹4600</strike></div>
+                        <div class="price-dis-value">₹4140</div>
+                    </div>
+                    <div class="card-rating flex-row">
+                        <div class="card-rating-value">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="card-rating-desc ml-2"> ( 4.6 ) </div>
+                    </div>
+                    <div class="card-button flex-row container">
+                        <button class="card-wishlist align-self-center"><i class="far fa-heart mr-1"></i></button>
+                        <button class="card-cart align-self-center">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card-badge">10% OFF</div>
+            </div>
+
+            <div class="card-container box-shadow flex-column">
+                <div class="card-image container">
+                    <img class="image-res" src="/images/perfume.jpg" alt="image" />
+                </div>
+                <div class="card-content flex-column">
+                    <div class="card-heading black-text mb-2">Versace Pour Homme Eau De Toilette</div>
+                    <div class="card-price flex-row">
+                        <div class="price-currency mr-1">MRP: </div>
+                        <div class="price-value mr-1"><strike>₹4600</strike></div>
+                        <div class="price-dis-value">₹4140</div>
+                    </div>
+                    <div class="card-rating flex-row">
+                        <div class="card-rating-value">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <div class="card-rating-desc ml-2"> ( 4.6 ) </div>
+                    </div>
+                    <div class="card-button flex-row container">
+                        <button class="card-wishlist align-self-center"><i class="far fa-heart mr-1"></i></button>
+                        <button class="card-cart align-self-center">Add To Cart</button>
+                    </div>
+                </div>
+                <div class="card-badge">10% OFF</div>
+            </div>
+        
 
     </main>
 
     <footer class="flex-column">
         <!-- social-media -->
-        <div class="social-media flex-row justify-content-between m-2">
+        <!-- <div class="social-media flex-row justify-content-between m-2">
             <div class="social-media-left flex-row justify-content-even gap">
                 <div class="social-media-item flex-row p-2">
                     <div class="social-icons mt-2"><i class="fas fa-truck"></i></div>
@@ -151,9 +284,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
-        <!-- footer -->
+        
         <div class="footer flex-column m-2 p-2 gap">
             <div class="policy flex-row">
                 <a CLASS="no-style-link white-text" href="#">TERMS & CONDITIONS</a>
@@ -164,9 +297,10 @@
             <div class="footer-note">
                 © 2022 Pulse - Made with <i class="fas fa-heart"></i> by Harshitha Konduru
             </div>
-        </div>
-    </footer>
+        </div> -->
+    </footer> 
 
-    
+
 </body>
+
 </html>
