@@ -130,7 +130,7 @@ label {
     padding: 0.5rem;
     color: var(--gray-text);
     font-weight: bold;
-    background-color:#e0e7ff;
+    background-color: var(--light-blue);
 }
 
 .card-rating-value {
