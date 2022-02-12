@@ -1,16 +1,18 @@
-body {
+.login-body {
     font-family: 'Roboto', sans-serif;
     position: sticky;
     background-color: var(--light-gray);
 }
 
 .login-container {
-    width: 20%;
     margin: auto;
-    padding: 1rem 2rem;
     border: var(--border-gray) solid 1.5px;
+}
+
+.login-main {
+    width: 25%;
+    margin: auto;
     background-color: var(--white-color);
-    margin-top: 3rem;
 }
 
 .main-heading {
