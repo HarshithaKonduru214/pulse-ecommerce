@@ -1,0 +1,73 @@
+.cart-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "content sidebar";
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+}
+
+.cart-content {
+    grid-area: content;
+    background-color: aquamarine;
+}
+
+.cart-sidebar {
+    grid-area: sidebar;
+}
+
+.cart-coupon-heading {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.cart-coupon-container {
+    justify-content: space-between;
+}
+
+.coupon-button {
+    font-size: 1rem;
+    border: var(--primary-color) solid 1px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    background-color: var(--white-color);
+    cursor: pointer;
+    border-radius: 0.3rem;
+    color: var(--primary-color);
+    align-self: center;
+}
+
+.coupon-button:hover {
+    background-color: var(--white-color);
+}
+
+.coupon-text {
+    font-weight: bold;
+}
+
+.cart-price {
+    color: var(--gray-text);
+}
+
+.cart-price-heading {
+    color: var(--dark-gray);
+    font-weight: bold;
+}
+
+.cart-primary {
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    padding: 0.7rem 1rem;
+    color: var(--white-color);
+    border-radius: 0.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cart-primary:hover {
+    background-color: var(--primary-color);
+}
+
+.bold {
+    font-weight: bold;
+}
