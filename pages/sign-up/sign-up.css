@@ -5,9 +5,9 @@ body {
 }
 
 .main {
-    width: 20%;
+    width: 25%;
     margin: auto;
-    padding: 1rem 2rem;
+    /* padding: 1rem 2rem; */
     border: var(--border-gray) solid 1.5px;
     background-color: white;
 }
@@ -47,6 +47,16 @@ body {
 }
 
 .main-desc {
-    font-size: 1.05rem;
+    font-size: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.placeholder {
+    top: -0.5rem;
+    font-size: 0.8rem;
+}
+
+.input-text {
+    width: 80%;
 }
