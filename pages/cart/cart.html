@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="https://utility-component.netlify.app/utility.css">
+    <link rel="stylesheet" href="https://oxygen-ui-component-library.netlify.app/components/card/card.css">
+    <link rel="stylesheet" href="/pages/product-listing/product-listing.css">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="cart.css">
+    <script src="https://kit.fontawesome.com/f80c68505b.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="cart-body">
+
+    <nav class="nav mb-2 box-shadow">
+        <div class="nav-content flex-row justify-content-between">
+            <div class="nav-left flex-row gap ">
+                <div class="nav-logo align-self-end ml-2"><a href="#" class="no-style-link">pulse</a></div>
+                <div class="nav-categories flex-row justify-content-main gap">
+                    <div class="nav-category-item align-self-end pb-2">
+                        <a class="list-heading no-style-link" href="#"><strong>WOMEN</strong></a>
+                        <div class="list-item-stacked box-shadow flex-column p-2">
+                            <a href="#" class="list-item gray-text no-style-link">Perfumes(EDT/EDP)</a>
+                            <a href="#" class="list-item gray-text no-style-link">Body Mists / Sprays</a>
+                            <a href="#" class="list-item gray-text no-style-link">Deodorants / Roll-Ons</a>
+                        </div>
+                    </div>
+                    <div class="nav-category-item align-self-end pb-2">
+                        <a class="list-heading no-style-link" href="#"><strong>MEN</strong></a>
+                        <div class="list-item-stacked box-shadow flex-column p-2">
+                            <a href="#" class="list-item gray-text no-style-link">Perfumes(EDT/EDP)</a>
+                            <a href="#" class="list-item gray-text no-style-link">Body Mists / Sprays</a>
+                            <a href="#" class="list-item gray-text no-style-link">Deodorants / Roll-Ons</a>
+                            <a href="#" class="list-item gray-text no-style-link">Colognes / After Shaves</a>
+                        </div>
+                    </div>
+                    <div class="nav-category-item align-self-end pb-2">
+                        <a class="list-heading no-style-link" href="#"><strong>TOP BRANDS</strong></a>
+                        <div class="list-item-stacked box-shadow flex-column p-2">
+                            <a href="#" class="list-item gray-text no-style-link">Dior</a>
+                            <a href="#" class="list-item gray-text no-style-link">Gucci</a>
+                            <a href="#" class="list-item gray-text no-style-link">Calvin Klein</a>
+                            <a href="#" class="list-item gray-text no-style-link">Davidoff</a>
+                            <a href="#" class="list-item gray-text no-style-link">Versace</a>
+                            <a href="#" class="list-item gray-text no-style-link">Skin by Titan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav-right flex-row justify-content-between">
+                <div class="nav-search align-self-center gap flex-row">
+                    <i class="fas fa-search align-self-center"></i>
+                    <input class="align-self-center nav-search-bar" type="search" name="search"
+                        placeholder="Search on Pulse">
+                </div>
+                <div class="nav-user align-self-end mb-2">
+                    <a class="account mr-2 button"><i class="fas mr-1 fa-user-alt"></i><span
+                            class="nav-user-title">Account</span></a>
+                    <a class="wishlist mr-2 button"><i class="far fa-heart mr-1"></i><span
+                            class="nav-user-title">Wishlist</span></a>
+                    <a class="cart mr-2 button"><i class="fas fa-shopping-cart mr-1"></i><span
+                            class="nav-user-title">Cart</span></a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="cart-container">
+        <div class="cart-content flex-column">
+            <div class="cart-address flex-row justify-content-between p-2">
+                <div class="cart-address-left">
+                    <div class="cart-address-name">Deliver To: <strong>Elena, 560024</strong></div>
+                    <div class="cart-address-det gray-text">3473 Willis Avenue, New Smyrna Beach, Florida</div>
+                </div>
+                <div class="cart-address-right">
+                    <button class="secondary-button">CHANGE ADDRESS</button>
+                </div>
+            </div>
+            <div class="cart-products">
+                <div class="card-container box-shadow horizontal-card">
+                    <div class="header flex-row mb-2 mt-2">
+                        <div class="card-image p-1">
+                            <img class="image-res image-no-border" src="/images/perfume.jpg" alt="image">
+                        </div>
+                        <div class="info p-2 flex-column justify-content-between">
+                            <div class="card-heading-container">
+                                <div class="heading">Versace Pour Homme Eau De Toilette(100ml)
+                                </div>
+                                <div class="card-content justify-content-between">
+                                    <div class="card-rating flex-row gap">
+                                        <div class="card-rating-value">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <div class="card-rating-number">4.3 / 5</div>
+                                    </div>    
+                                </div>
+                            </div>
+                            
+                            <div class="card-footer flex-row justify-content-between">
+                                <div class="card-qty flex-row">
+                                    <div class="card-qty-content align-self-center">Quantity: 1</div>
+                                    <div class="card-qty-icon align-self-center"><i class="fas fa-angle-down"></i></div>
+                                </div>
+                                <div class="card-wishlish secondary-button">MOVE TO WISHLIST</div>
+                            </div>
+                        </div>    
+                    </div>
+                    <button class="card-close"><i class="fas fa-times-circle"></i></button>
+                </div>
+                <div class="card-container box-shadow horizontal-card">
+                    <div class="header flex-row mb-2 mt-2">
+                        <div class="card-image p-1">
+                            <img class="image-res image-no-border" src="/images/perfume.jpg" alt="image">
+                        </div>
+                        <div class="info p-2 flex-column justify-content-between">
+                            <div class="card-heading-container">
+                                <div class="heading">Versace Pour Homme Eau De Toilette(100ml)
+                                </div>
+                                <div class="card-content justify-content-between">
+                                    <div class="card-rating flex-row gap">
+                                        <div class="card-rating-value">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <div class="card-rating-number">4.3 / 5</div>
+                                    </div>    
+                                </div>
+                            </div>
+                            
+                            <div class="card-footer flex-row justify-content-between">
+                                <div class="card-qty flex-row">
+                                    <div class="card-qty-content align-self-center">Quantity: 1</div>
+                                    <div class="card-qty-icon align-self-center"><i class="fas fa-angle-down"></i></div>
+                                </div>
+                                <div class="card-wishlish secondary-button">MOVE TO WISHLIST</div>
+                            </div>
+                        </div>    
+                    </div>
+                    <button class="card-close"><i class="fas fa-times-circle"></i></button>
+                </div>
+                <div class="card-container box-shadow horizontal-card">
+                    <div class="header flex-row mb-2 mt-2">
+                        <div class="card-image p-1">
+                            <img class="image-res image-no-border" src="/images/perfume.jpg" alt="image">
+                        </div>
+                        <div class="info p-2 flex-column justify-content-between">
+                            <div class="card-heading-container">
+                                <div class="heading">Versace Pour Homme Eau De Toilette(100ml)
+                                </div>
+                                <div class="card-content justify-content-between">
+                                    <div class="card-rating flex-row gap">
+                                        <div class="card-rating-value">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <div class="card-rating-number">4.3 / 5</div>
+                                    </div>    
+                                </div>
+                            </div>
+                            
+                            <div class="card-footer flex-row justify-content-between">
+                                <div class="card-qty flex-row">
+                                    <div class="card-qty-content align-self-center">Quantity: 1</div>
+                                    <div class="card-qty-icon align-self-center"><i class="fas fa-angle-down"></i></div>
+                                </div>
+                                <div class="card-wishlish secondary-button">MOVE TO WISHLIST</div>
+                            </div>
+                        </div>    
+                    </div>
+                    <button class="card-close"><i class="fas fa-times-circle"></i></button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cart-sidebar flex-column">
+            <div class="cart-sidebar-coupons flex-column">
+                <div class="cart-coupon-heading gray-text mb-2">COUPONS</div>
+                <div class="cart-coupon-container flex-row">
+                    <div class="coupon-desc flex-row gap">
+                        <div class="coupon-icon align-self-center"><i class="fas fa-tag"></i></div>
+                        <div class="align-self-center coupon-text">Apply Coupons</div>
+                    </div>
+                    <button class="secondary-button mb-2">APPLY</button>
+                </div>
+                <hr>
+                <div class="cart-sidebar-price flex-column mt-2 mb-2">
+                    <div class="cart-price-heading mb-2">Price Details</div>
+                    <div class="cart-price flex-row justify-content-between pb-2">
+                        <div class="cart-price-head">Total MRP</div>
+                        <div class="cart-price-value">₹1,198</div>
+                    </div>
+                    <div class="cart-price flex-row justify-content-between pb-2">
+                        <div class="cart-price-head">Discount on MRP</div>
+                        <div class="cart-price-value">-₹839</div>
+                    </div>
+                    <div class="cart-price flex-row justify-content-between pb-2">
+                        <div class="cart-price-head">Coupon Discount</div>
+                        <a href="#" class="no-style-link cart-price-value">Apply Coupon</a>
+                    </div>
+                    <div class="cart-price flex-row justify-content-between pb-2">
+                        <div class="cart-price-head">Delivery Fee</div>
+                        <div class="cart-price-value">FREE</div>
+                    </div>
+                    <hr>
+                    <div class="cart-price flex-row justify-content-between pb-2 mt-2">
+                        <div class="cart-price-head black-text bold">Total Amount</div>
+                        <div class="cart-price-value black-text bold">₹1,198</div>
+                    </div>
+                </div>
+                <button class="primary-button">PLACE ORDER</button>
+            </div>
+            <div class="cart-sidebar-price"></div>
+            <div class="cart-sidebar-message"></div>
+            <div class="cart-sidebar-button"></div>
+        </div>
+    </main>
+    
+    <footer class="footer-container flex-column">
+        <div class="social-media flex-row justify-content-between m-2">
+            <div class="social-media-left flex-row justify-content-even gap">
+                <div class="social-media-item flex-row p-2">
+                    <div class="social-icons mt-2"><i class="fas fa-truck"></i></div>
+                    <div class="social-content flex-column p-2">
+                        <div class="social-heading margin-bottom-xs">FREE SHIPPING</div>
+                        <div class="social-desc mt-2 gray-text">For orders above Rs.999.</div>
+                    </div>
+                </div>
+                <div class="social-media-item flex-row p-2">
+                    <div class="social-icons mt-2"><i class="fas fa-undo-alt"></i></div>
+                    <div class="social-content flex-column p-2">
+                        <div class="social-heading margin-bottom-xs">EASY RETURNS</div>
+                        <div class="social-desc mt-2 gray-text">15 Day Easy Returns For Most Products.</div>
+                    </div>
+                </div>
+                <div class="social-media-item flex-row p-2">
+                    <div class="social-icons mt-2"><i class="fas fa-certificate"></i></div>
+                    <div class="social-content flex-column p-2">
+                        <div class="social-heading margin-bottom-xs">AUTHENTIC PRODUCTS</div>
+                        <div class="social-desc mt-2 gray-text">Sourced Directly from Brands/ Authorised Distributors.
+                        </div>
+                    </div>
+                </div>
+                <div class="social-media-item flex-row p-2">
+                    <div class="social-icons mt-2"><i class="fas fa-tag"></i></div>
+                    <div class="social-content flex-column p-2">
+                        <div class="social-heading mb-1">10+ BRANDS</div>
+                        <div class="social-desc mt-2 gray-text">Well curated list of brands.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="social-media-right">
+                <div class="social-media-item flex-column p-2 mt-2">
+                    <div class="social-heading align-self-center">SHOW US SOME LOVE</div>
+                    <div class="social-links flex-row align-self-center">
+                        <a href="#"><i class="social-icons mt-2 mr-1 fab fa-github-square"></i></a>
+                        <a href="#"><i class="social-icons mt-2 mr-1 fab fa-linkedin"></i></a>
+                        <a href="#"><i class="social-icons mt-2 mr-1 fab fa-twitter-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="footer flex-column m-2 p-2 gap">
+            
+            <div class="policy flex-row">
+                <a CLASS="no-style-link white-text" href="#">TERMS & CONDITIONS</a>
+                <a CLASS="no-style-link white-text" href="#">CANCELLATION POLICY</a>
+                <a CLASS="no-style-link white-text" href="#">SHIPPING POLICY</a>
+                <a CLASS="no-style-link white-text" href="#">PRIVACY POLICY</a>
+            </div>
+            <div class="footer-note">
+                © 2022 Pulse - Made with <i class="fas fa-heart"></i> by Harshitha Konduru
+            </div>
+        </div> 
+    </footer> 
+
+</body>
+
+</html>

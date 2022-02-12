@@ -1,0 +1,124 @@
+.cart-body {
+    background-color: var(--light-gray);
+}
+
+.cart-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "content sidebar";
+    width: 80%;
+    margin: auto;
+    gap: 2rem;
+}
+
+.cart-content {
+    grid-area: content;
+}
+
+.cart-sidebar {
+    grid-area: sidebar;
+    border: var(--border-gray) solid 1px;
+    padding: 1rem;
+    height: fit-content;
+    background-color: var(--white-color);
+}
+
+.cart-coupon-heading {
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.cart-coupon-container {
+    justify-content: space-between;
+}
+
+.secondary-button {
+    font-size: 1rem;
+    border: var(--primary-color) solid 1px;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    background-color: var(--white-color);
+    cursor: pointer;
+    border-radius: 0.3rem;
+    color: var(--primary-color);
+    align-self: center;
+}
+
+.secondary-button:hover {
+    background-color: var(--white-color);
+}
+
+.coupon-text {
+    font-weight: bold;
+}
+
+.cart-price {
+    color: var(--gray-text);
+}
+
+.cart-price-heading {
+    color: var(--dark-gray);
+    font-weight: bold;
+}
+
+.primary-button {
+    font-size: 1rem;
+    background-color: var(--primary-color);
+    padding: 0.7rem 1rem;
+    color: var(--white-color);
+    border-radius: 0.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: var(--primary-color);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.cart-address {
+    border: var(--border-gray) solid 1px;
+    border-radius: 0.3rem;
+    background-color: var(--white-color);
+}
+
+.cart-address-name {
+    margin-bottom: 0.5rem;
+}
+
+.qty {
+    border: var(--secondary-color) solid 1px;
+    padding: 0.45rem 1rem;
+    font-size: 1rem;
+    border-radius: 0.2rem;
+}
+
+.heading {
+    font-size: 1.2rem;
+    padding-right: 1rem;
+}
+
+.card-qty-icon {
+    font-size: 1.3rem;
+    margin-left: 0.2rem;
+}
+
+.card-container {
+    position: relative;
+}
+
+.card-close {
+    position: absolute;
+    font-size: 1rem;
+    top: 0;
+    right: 0;
+    margin: 0.1rem;
+    background-color: var(--white-color);
+}
+
+.card-close:hover {
+    background-color: var(--white-color);
+}
