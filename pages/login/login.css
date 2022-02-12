@@ -5,7 +5,7 @@ body {
 }
 
 .login-container {
-    width: 25%;
+    width: 20%;
     margin: auto;
     padding: 1rem 2rem;
     border: var(--border-gray) solid 1.5px;
@@ -49,4 +49,17 @@ body {
 
 .main-desc {
     font-size: 1.05rem;
+}
+
+.input-text {
+    width: 100%;
+}
+
+.form-check-link {
+    color: var(--primary-color);
+}
+
+.sign-button-secondary:hover {
+    border: var(--primary-color) solid 2px;
+
 }
