@@ -7,14 +7,12 @@ body {
 .main {
     width: 25%;
     margin: auto;
-    /* padding: 1rem 2rem; */
     border: var(--border-gray) solid 1.5px;
     background-color: white;
 }
 
 .main-heading {
     font-size: 1.5rem;
-    /* align-self: center; */
     font-weight: bold;
 }
 
@@ -27,6 +25,7 @@ body {
     border-radius: 0.3rem;
     font-weight: bold;
     cursor: pointer;
+    margin-bottom: 0.5rem;
 }
 
 .sign-button-secondary {
@@ -38,12 +37,12 @@ body {
     cursor: pointer;
 }
 
-.sign-up-container {
-    align-content: center;
+.sign-button-secondary:hover {
+    border: var(--primary-color) solid 2px;
 }
 
-.form-check  {
-    margin-bottom: 2rem;
+.sign-up-container {
+    align-content: center;
 }
 
 .main-desc {
