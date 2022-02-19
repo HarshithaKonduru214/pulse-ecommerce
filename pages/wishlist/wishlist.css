@@ -55,8 +55,8 @@ hr {
 .card-close {
     position: absolute;
     font-size: 1.5rem;
-    color: var(--primary-color);
-    right: 0;
+    right: 0.2rem;
+    top: 0.5rem;
     background-color: var(--white-color);
 }
 
@@ -64,11 +64,7 @@ hr {
     background-color: var(--white-color);
 }
 
-.card-container {
-    width: 25%;
-}
-
-.wishlist-heading {
-    align-content: center;
-    padding-left: 2rem;
+.card-badge-top {
+    left: 0;
+    width: fit-content;
 }
