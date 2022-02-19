@@ -53,12 +53,14 @@ body {
     font-size: 1rem;
     color: var(--primary-color);
     background-color: var(--light-gray);
+    border: none;
 }
 
 .sidebar-clear:hover {
     background-color: var(--light-gray);
     transform: unset;
     transition: 0.1s;
+    cursor: pointer;
 }
 
 .product-list{
@@ -82,13 +84,6 @@ label {
     color: var(--gray-text);
 }
 
-.card-container {
-    position: relative;
-    cursor: pointer;
-    /* grid-area: card; */
-    height: fit-content;
-}
-
 .card-content {
     align-items: center;
     width: 100%;
@@ -99,42 +94,21 @@ label {
     font-size: 1rem;
     font-weight: 600;
     text-align: center;
-}
-
-.card-cart {
-    flex: 3 0 0;
-    font-size: 1rem;
-    padding: 1rem;
-    font-weight: 600;
-    color: white;
-    background-color: var(--primary-color);
-    height: 100%;
+    padding: 0rem 0.5rem;
 }
 
 .card-cart:hover {
     background-color: var(--secondary-color);
 }
 
-.card-wishlist {
-    flex: 1 0 0;
-    font-size: 1rem;
-    color: var(--primary-color);
-    height: 100%;
-    padding: 1rem;
+.card-wishlist:hover {
+    background-color: var(--border-gray);
 }
 
-.card-badge {
-    position: absolute;
-    right: 0;
-    top: 0.5rem;
-    padding: 0.5rem;
+.card-badge-top {
     color: var(--gray-text);
     font-weight: bold;
     background-color: var(--light-blue);
-}
-
-.card-rating-value {
-    color: var(--secondary-color);
 }
 
 .footer-container{

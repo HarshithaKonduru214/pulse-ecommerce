@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Syne+Tactile&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Murecho&family=Roboto&display=swap');
+@import url("https://oxygen-ui-component-library.netlify.app/components/list/list.css");
 
 /* color variables */
 :root {
@@ -99,10 +100,6 @@ nav {
     z-index: 1;
     background-color: white;
     width: max-content;
-}
-
-.nav-category-item>a:hover {
-    color: var(--secondary-color);
 }
 
 .nav-category-item:hover .list-item-stacked {
