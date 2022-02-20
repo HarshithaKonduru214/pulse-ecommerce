@@ -2,7 +2,7 @@
 
 <p> Pulse is an ecommerce website that sells the best fragrances.</p>
 
-<h3>Available Pages</h3>
+<h2>Available Pages</h2>
 <ul>
   <li>Home Page</li>
   <li>Product listing page</li>
@@ -10,9 +10,9 @@
   <li>Cart</li>
   <li>Login page</li>
   <li>Sign up Page</li>
-<ul> <hr>
+<ul> 
   
-<h3>Home Page</h3>
+<h2>Home Page</h2>
   <p>The homepage consists of the following sections:</p>
   <ul>
     <li>Shop by category</li>
@@ -26,7 +26,7 @@
   
   Link: https://pulse-fragrances.netlify.app/
 
-  <h3>Product Listing Page</h3>
+  <h2>Product Listing Page</h2>
   <p>The product listing page consists of the following sections:</p>
   <ul>
     <li>Filters:
@@ -43,7 +43,7 @@
   Link: https://pulse-fragrances.netlify.app/pages/product-listing/product-listing.html
   
 
-  <h3>Sign Up Page</h3>
+  <h2>Sign Up Page</h2>
   <p>The signup page consists of the following sections:</p>
   <ul>
     <li>Signup Form: Takes the user's name, email address and password for registering the user.
@@ -52,7 +52,7 @@
   
   Link: https://pulse-fragrances.netlify.app/pages/sign-up/sign-up.html
 
-  <h3>Login Page</h3>
+  <h2>Login Page</h2>
    <p>The login page consists of the following sections:</p>
   <ul>
     <li>Login Form: Takes the user's email address and password for logging in the user.
@@ -61,7 +61,7 @@
   
   Link: https://pulse-fragrances.netlify.app/pages/login/login.html
 
-  <h3>Cart</h3>
+  <h2>Cart</h2>
   <p>The cart page consists of the following sections:</p>
   <ul>
     <li>Address details of the customer</li>
@@ -72,7 +72,7 @@
   Link: https://pulse-fragrances.netlify.app/pages/cart/cart.html
 
 
-  <h3>Wishlist</h3>
+  <h2>Wishlist</h2>
   <p>The wishlist page consists of the following sections:</p>
   <ul>
     <li>Products added to wishlist</li>
