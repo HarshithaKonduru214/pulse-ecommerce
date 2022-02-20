@@ -25,7 +25,8 @@ Link: https://pulse-fragrances.netlify.app/
   <li>Social Media Links</li>
   <li>App Policy</li>
 </ul><br>
-  ![chrome-capture-2022-1-21](https://user-images.githubusercontent.com/83581646/154860794-0545334e-abdb-4030-a375-54644677e9ba.gif)
+  
+![gif](https://user-images.githubusercontent.com/83581646/154861238-584c8008-f424-4ac9-bc34-18028d97d408.gif)
 
   <h2>Product Listing Page</h2>
   Link: https://pulse-fragrances.netlify.app/pages/product-listing/product-listing.html
